@@ -1,0 +1,54 @@
+# Fitxer de definició de l'estructura per a l'empresa Serveis BCN. 
+# Definió de les ou de primer nivell 
+dn: ou=Barcelona,dc=serveisbcn,dc=com 
+objectClass: organizationalUnit 
+ou: Barcelona 
+#localityName és equivalent a l 
+localityName: Barcelona
+ 
+dn: ou=Sabadell,dc=serveisbcn,dc=com 
+objectClass: organizationalUnit 
+ou: Sabadell 
+localityName: Sabadell 
+
+dn: ou=equipament,ou=Sabadell,dc=serveisbcn,dc=com 
+objectClass: organizationalUnit 
+ou: equipament 
+description: Equips de la seu de Sabadell 
+
+#Entrades de tercer nivell, personal i equips. 
+dn: cn=Josep Mas,ou=personal,ou=Barcelona,dc=serveisbcn,dc=com 
+objectClass: inetOrgPerson 
+cn: Josep Mas 
+givenName: Josep 
+sn: Mas 
+title: Gerent 
+telephoneNumber: +34931234567 
+mail: jmas@serveisbcn.com 
+l: Barcelona 
+
+dn: cn=Júlia Vila,ou=personal,ou=Sabadell,dc=serveisbcn,dc=com 
+objectClass: inetOrgPerson 
+cn: Júlia Vila 
+givenName: Júlia 
+sn: Vila 
+title: Administratiu 
+telephoneNumber: +34931234567 
+mail: jvila@serveisbcn.com 
+l: Sabadell 
+
+dn: cn=pc1234,ou=equipament,ou=Barcelona,dc=serveisbcn,dc=com 
+objectClass: device 
+cn: pc1234 
+serialNumber: HL45557-CJ 
+owner: cn=Josep Mas,ou=personal,ou=Barcelona,dc=serveisbcn,dc=com 
+l: Barcelona 
+description: Ordinador del gerent 
+
+dn: cn=pc34S,ou=equipament,ou=Sabadell,dc=serveisbcn,dc=com 
+objectClass: device 
+cn: pc34S 
+serialNumber: HP5KL57-NP 
+owner: cn=Júlia Vila,ou=personal,ou=Sabadell,dc=serveisbcn,dc=com 
+l: Sabadell 
+description: Ordinador del departament de comptabilitat

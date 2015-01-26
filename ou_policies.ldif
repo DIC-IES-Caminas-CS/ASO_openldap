@@ -1,0 +1,27 @@
+dn: ou=pwpolicies,dc=serveisbcn,dc=local 
+objectClass: organizationalUnit 
+objectClass: top 
+ou: pwpolicies 
+dn: cn=default,ou=pwpolicies,dc=serveisbcn,dc=local 
+cn: default 
+objectClass: pwdPolicyChecker 
+objectClass: pwdPolicy 
+objectClass: person 
+objectClass: top 
+pwdAllowUserChange: TRUE 
+pwdAttribute: 2.5.4.35 
+pwdCheckModule: crackcheck.so 
+pwdCheckQuality: 2 
+pwdExpireWarning: 604800 
+pwdFailureCountInterval: 30 
+pwdGraceAuthNLimit: 0 
+pwdInHistory: 10 
+pwdLockout: TRUE 
+pwdLockoutDuration: 3600 
+pwdMaxAge: 7776000 
+pwdMaxFailure: 5 
+pwdMinAge: 3600 
+pwdMinLength: 8 
+pwdMustChange: FALSE 
+pwdSafeModify: FALSE 
+sn: dummy value

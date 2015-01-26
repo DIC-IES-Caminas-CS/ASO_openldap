@@ -2,6 +2,7 @@ dn: ou=pwpolicies,dc=serveisbcn,dc=local
 objectClass: organizationalUnit 
 objectClass: top 
 ou: pwpolicies 
+
 dn: cn=default,ou=pwpolicies,dc=serveisbcn,dc=local 
 cn: default 
 objectClass: pwdPolicyChecker 

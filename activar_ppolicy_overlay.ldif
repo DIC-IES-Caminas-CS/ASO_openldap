@@ -1,0 +1,7 @@
+dn: olcOverlay=ppolicy,olcDatabase={1}bdb,cn=config 
+olcOverlay: ppolicy 
+objectClass: olcOverlayConfig 
+objectClass: olcPPolicyConfig 
+olcPPolicyDefault: cn=default,ou=pwpolicies,dc=syco,dc=net 
+olcPPolicyHashCleartext: TRUE 
+olcPPolicyUseLockout: FALSE
